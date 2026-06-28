@@ -36,13 +36,13 @@ public class MovieListingsManagerTest {
         manager.add("Вперед");
 
 
-        String[] expected = {"Джентельмены","Вперед"};
+        String[] expected = {"Джентельмены", "Вперед"};
 
 
         assertArrayEquals(expected, manager.returnAll());
     }
 
-//  Возвращение всего массива
+    //  Возвращение всего массива
     @Test
     public void shouldReturnAllMovies() {
         MovieListingsManager manager = new MovieListingsManager();
@@ -164,6 +164,7 @@ public class MovieListingsManagerTest {
 
         assertArrayEquals(expected, manager.findLast());
     }
+
     // Лимит 6, больше лимита по умолчанию
     @Test
     public void shouldReturnMovieListingWithClientLimit6() {
